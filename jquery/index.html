@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="rules">
+        <h1>Rules</h1>
+        <ul>
+            <li>1. Title must be between 1 and 50 characters</li>
+            <li>2. Title color must be a valid color</li>
+            <li>3. Title size must be between 10 and 50</li>
+            <li>4. Background color must be a valid color</li>	
+            <li>5. If you save your file an automatic download will start</li>
+        </ul>
+        <div>
+            <button id="save">Save</button>
+            <button id="load">Load</button>
+            <button id="clear">Clear</button>
+        </div>
+    </div>
+    <div id="inputField">
+        <div>
+            <label for="title">Title: </label>
+            <input type="text" name="title" id="title" minlength="1" maxlength="50" placeholder="Your title">
+        </div>
+        <div>
+            <label for="titleColor">Title Color: </label>
+            <input type="color" name="titleColor" id="titleColor" value="#7A7A7A">
+        </div>
+        <div>
+            <label for="titleSize">Title Size: </label>
+            <input type="number" name="titleSize" min="10" max="50" id="titleSize" value="10">
+        </div>
+        <div>
+            <label for="titleFont">Title font: </label>
+            <select name="titleFont" id="titleFont">
+                <option value="Arial" style="font-family: Arial";>Arial</option>
+                <option value="Verdana" style="font-family: Verdana";>Verdana</option>
+                <option value="Tahoma" style="font-family: Tahoma;">Tahoma</option>
+                <option value="Trebuchet MS" style="font-family: Trebuchet MS;">Trebuchet MS</option>
+                <option value="Times New Roman" style="font-family: Times New Roman;">Times New Roman</option>
+                <option value="Georgia" style="font-family: Georgia;">Georgia</option>    
+                <option value="Garamond" style="font-family: Garamond;">Garamond</option>
+                <option value="Courier New" style="font-family: Courier New;">Courier New</option>
+                <option value="Brush Script MT" style="font-family: Brush Script MT;">Brush Script MT</option>
+            </select>
+        </div>
+        <div> 
+            <label for="bgColor">Background Font: </label>
+            <input type="color" name="bgColor" id="bgColor" value="#FAFAFA">
+        </div>
+        <div>
+            <label for="keepValues">Keep values </label>
+            <input type="checkbox" name="keepValues" id="keepValues">
+        </div>
+        <div>
+            <button id="add">Add</button>
+            <button id="edit" disabled>Edit</button>
+            <button id="delete" disabled>Delete</button>
+            <button id="cancel" disabled>Cancel</button>
+        </div>
+    </div>
+    <div id="outputField">
+
+    </div>
+</body>
+</html>

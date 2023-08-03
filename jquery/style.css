@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+#rules {
+    background-color: gray;
+    margin: 10px;
+    padding: 10px;
+}
+
+#inputField {
+    background-color: gray;
+    margin: 10px;
+    padding: 10px;
+}
+
+#outputField {
+    background-color: gray;
+    margin: 10px;
+    padding: 10px;
+    height: 40vh;
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid cornsilk;
+    width: fit-content;
+    height: fit-content;
+}
+
+.card-selected {
+    border: 2px solid rgb(95, 193, 223);
+    transform: rotate(5deg);
+  }
+
+ul {
+    list-style-type: none;
+}
